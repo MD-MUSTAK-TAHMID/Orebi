@@ -32,7 +32,7 @@ const Navber = () => {
                 <div className={`menu w-full lg:flex justify-center transition-all duration-500 items-center absolute lg:static top-full left-0 bg-slate-200 lg:bg-transparent py-7 px-5 lg:py-0 lg:px-0 lg:mt-0 mt-5 z-20 ${show?" opacity-100 visible":" opacity-0 invisible"}`}>
                      <ul className='flex  lg:gap-x-10 gap-x-16 gap-y-5 items-center justify-center lg:flex-row flex-wrap ps'>
                          <List href="/products" text="Home"/>
-                         <List href="/" text="Shop"/>
+                         <List href="/error" text="Shop"/>
                          <List href="/" text="About"/>
                          <List href="/" text="Contacts"/>
                          <List href="/" text="Journal"/>

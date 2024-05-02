@@ -8,6 +8,7 @@ import {
   Route,RouterProvider,
 } from "react-router-dom";
 import Rootlayout from './components/layers/Rootlayout';
+import Error from './components/pages/Error';
 
 const App = () => {
   const router = createBrowserRouter(
@@ -18,6 +19,7 @@ const App = () => {
       >
         <Route index element={<Home/>}></Route>
         <Route path='/products' element={<Product/>}></Route>
+        <Route path='/error' element={<Error/>}></Route>
       </Route>
     )
   );
