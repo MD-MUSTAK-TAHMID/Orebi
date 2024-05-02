@@ -3,7 +3,7 @@ import Container from './layers/Container'
 import Images from './layers/Images'
 import List from './layers/List'
 import { FaBars } from "react-icons/fa";
-
+import logo from"../assets/logo.png"
 const Navber = () => {
     let [show, setShow] = useState(false);
     let fdr = () => {
@@ -26,7 +26,7 @@ const Navber = () => {
     <nav className='md:py-8 py-4'>
         <Container className="flex items-center justify-between lg:static lg:px-[0px] px-5 relative">
             <div className="logo">
-                <Images href="/" src="src/assets/logo.png" alt="logo"/>
+                <Images href="/" src={logo} alt="logo"/>
             </div>
             <FaBars onClick={fdr} className='lg:hidden cursor-pointer'/>   
                 <div className={`menu w-full lg:flex justify-center transition-all duration-500 items-center absolute lg:static top-full left-0 bg-slate-200 lg:bg-transparent py-7 px-5 lg:py-0 lg:px-0 lg:mt-0 mt-5 z-20 ${show?" opacity-100 visible":" opacity-0 invisible"}`}>
