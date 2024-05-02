@@ -1,7 +1,7 @@
 import Container from './layers/Container'
 import React from 'react'
 import two from "../assets/2.png"
-import two from "../assets/2.png"
+import track from "../assets/track.png"
 import Reload from "../assets/Reload.png"
 const BanerBottom = () => {
   return (
