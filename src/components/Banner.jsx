@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Slider from 'react-slick';
 import Images from './layers/Images';
-
+import banner_image from "../assets/Banner.png"
 const Banner = () => {
 
   let [active, setActive] = useState(0)
@@ -73,13 +73,13 @@ const Banner = () => {
     <div>
     <Slider {...settings}>
     <div className="">
-        <Images href="/" src="src/assets/Banner.png"/>
+        <Images href="/" src={banner_image}/>
     </div>    
     <div className="">
-        <Images href="/" src="src/assets/Banner.png"/>
+        <Images href="/" src={banner_image}/>
     </div>    
     <div className="">
-        <Images href="/" src="src/assets/Banner.png"/>
+        <Images href="/" src={banner_image}/>
     </div>
     </Slider>
     </div>
