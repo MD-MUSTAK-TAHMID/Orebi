@@ -7,6 +7,7 @@ import { FaSearch } from "react-icons/fa";
 import SearchDropdown_1 from './layers/SearchDropdown_1';
 import SearchDropdown_2 from './layers/SearchDropdown_2';
 import SearchDropdown_3 from './layers/SearchDropdown_3';
+import bar from "../assets/bar.png"
 const Searchbar = () => {
   let [cat, setcat] = useState(false);
   let catRef = useRef()
@@ -48,7 +49,7 @@ const Searchbar = () => {
             <Container className="flex lg:justify-between justify-center items-center flex-wrap lg:gap-0 gap-3 cursor-pointer">
                 <div ref={catRef} className="shop flex gap-[10.71px] items-center relative ">
                   <picture className=''>
-                    <img src="src/assets/bar.png" alt="" />
+                    <img src={bar} alt="" />
                   </picture>
                   <p className='text-[#262626] font-DM md:text-[14px] text-xs font-normal'>Shop by Category</p>
                   <div className="">
