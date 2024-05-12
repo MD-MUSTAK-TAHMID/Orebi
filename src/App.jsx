@@ -10,6 +10,9 @@ import {
 import Rootlayout from './components/layers/Rootlayout';
 import Error from './components/pages/Error';
 import Contacts from './components/pages/Contacts';
+import Singup from './components/pages/Singup';
+import Login from './components/pages/Login';
+import ProductDetails from './components/pages/ProductDetails';
 
 const App = () => {
   const router = createBrowserRouter(
@@ -22,6 +25,9 @@ const App = () => {
         <Route path='/products' element={<Product/>}></Route>
         <Route path='/error' element={<Error/>}></Route>
         <Route path='/contacts' element={<Contacts/>}></Route>
+        <Route path='/sign/up' element={<Singup/>}></Route>
+        <Route path='/login' element={<Login/>}></Route>
+        <Route path='/products/details' element={<ProductDetails/>}></Route>
       </Route>
     )
   );

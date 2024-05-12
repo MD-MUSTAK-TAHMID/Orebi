@@ -35,7 +35,7 @@ const Navber = () => {
                          <List href="/products" text="Shop"/>
                          <List href="/error" text="About"/>
                          <List href="/contacts" text="Contacts"/>
-                         <List href="/error" text="Journal"/>
+                         <List href="/sign/up" text="Journal"/>
                      </ul>
                  </div>
         </Container>

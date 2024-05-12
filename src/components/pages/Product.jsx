@@ -28,7 +28,7 @@ const Product = () => {
   return (
     <>
       <Container>
-         <HeaderForBreadcrumb/>
+         <HeaderForBreadcrumb text="Products"/>
          <div className="main flex justify-between">
             <div className="sidebar w-[370px] flex flex-col gap-y-[53px]">
               <ProductFillter/>

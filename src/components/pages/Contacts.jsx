@@ -4,15 +4,14 @@ import HeaderForBreadcrumb from '../layers/HeaderForBreadcrumb'
 import ButtonForCartDropdown from '../layers/ButtonForCartDropdown'
 import ContuctDropdown from '../layers/ContuctDropdown'
 import { Link } from 'react-router-dom'
+import HeadingForPages from '../layers/HeadingForPages'
 const Contacts = () => {
   return (
     <>
         <Container>
-            <HeaderForBreadcrumb/>
+            <HeaderForBreadcrumb text="Contacts"/>
             <div className="px-3 lg:px-0">
-                <h3 className='lg:text-[39px] md:text-[30px] sm:text-[25px] text-[20px] font-bold font-DM text-[#262626] lg:pb-[42px] md:pb-[30px] sm:pb-[20px] pb-[15px]'>
-                    Fill up a Form
-                </h3>
+                <HeadingForPages text="Fill up a Form"/>
                 <div className="flex flex-col lg:gap-y-[23px] md:gap-y-[18px] sm:gap-y-[14px] gap-y-[10px]">
                     <div className="flex flex-col">
                         <label htmlFor="name" className='lg:text-base sm:text-sm text-xs font-bold font-DM text-[#262626] pb-[10px]'>

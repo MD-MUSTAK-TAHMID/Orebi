@@ -1,0 +1,12 @@
+.slick-dots ul li:nth-child(1) .hello{
+    background: url(/src/assets/ProductDetails_1.png) no-repeat center /cover;
+    border: none !important;
+}
+.slick-dots ul li:nth-child(2) .hello{
+    background: url(/src/assets/ProductDetails_2.png) no-repeat center /cover;
+    border: none !important;
+}
+.slick-dots ul li:nth-child(3) .hello{
+    background: url(/src/assets/ProductDetails_3.png) no-repeat center /cover;
+    border: none !important;
+}
