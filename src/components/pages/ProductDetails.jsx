@@ -95,7 +95,7 @@ const ProductDetails = () => {
          <div className="flex lg:gap-[53px] md:gap-[30px] sm:gap-[25px] gap-[15px] items-center pt-[29px]">
           <label htmlFor="" className='lg:text-base sm:text-sm text-xs text-[#262626] font-bold'>SIZE:</label>
           <div className="flex lg:gap-[15px] sm:gap-[10px] gap-[7px] items-center ">
-             <div className='py-3 px-8 bg-transparent border border-[#F0F0F0] lg:max-w-[139px] md:max-w-24 sm:max-w-16 max-w-10 lg:text-base sm:text-sm text-xs text-[#767676] flex items-center lg:gap-[35px] md:gap-[30px] sm:gap-[25px] gap-5 justify-center '>
+             <div className='py-3 px-8 bg-transparent border border-[#F0F0F0] lg:max-w-[139px] md:max-w-28 sm:max-w-24 max-w-20 lg:text-base sm:text-sm text-xs text-[#767676] flex items-center lg:gap-[35px] md:gap-[30px] sm:gap-[25px] gap-5 justify-center '>
                 <p className='cursor-pointer ' onClick={()=>{settext(text-1)}}>-</p>
                 <h1>{text}</h1>
                 <p className='cursor-pointer ' onClick={()=>{settext(text + 1)}}>+</p>
@@ -107,15 +107,15 @@ const ProductDetails = () => {
                     <h4 htmlFor="" className='lg:text-base sm:text-sm text-xs text-[#262626] font-bold'>STATUS:</h4>
                     <p className='lg:text-base sm:text-sm text-xs text-[#767676]'>In stock</p>
                   </div>
-                  <div className="flex flex-wrap lg:gap-5 md:gap-4 sm:gap-3 gap-2 py-5 border-b border-[#F0F0F0]">
-                    <ButtonForCartDropdown text="Add to Cart" className="w-[200px]"/>
-                    <ButtonForCartDropdown text="Add to Wish List" className="w-[200px]"/>
+                  <div className="flex flex-wrap lg:gap-5 md:gap-4 sm:gap-3 gap-2 py-5 border-b border-[#F0F0F0] md:justify-start justify-center items-center">
+                    <ButtonForCartDropdown text="Add to Cart" className="w-[200px] md:h-auto h-10"/>
+                    <ButtonForCartDropdown text="Add to Wish List" className="w-[200px] md:h-auto h-10"/>
                   </div>
                   <div className="w-full">
                     <ProductDatials text="FEATURES  & DETAILS"/>
                     <ProductDatials text="SHIPPING & RETURNS"/>
                   </div>
-                  <div className="pt-[19px] pb-[123px]">
+                  <div className="pt-[19px] lg:pb-[123px] md:pb-20 sm:pb-16 pb-12">
                     <p className='lg:text-base sm:text-sm text-xs text-[#767676]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                   </div>
                   <div className="flex lg:gap-[62px] md:gap-14 sm:gap-10 gap-7">
@@ -124,7 +124,7 @@ const ProductDetails = () => {
                   </div>
                   {
                     <div className="">
-                                          <p className={`lg:text-base sm:text-sm text-xs text-[#767676] leading-[30px] lg:py-6 md:py-5 sm:py-4 py-3 ${show?" inline-block":"hidden"}`}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur illum suscipit culpa similique amet, non dicta! Laborum eveniet tempore beatae ipsa? Architecto quasi vitae eveniet magnam sapiente id est eum? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam eveniet enim temporibus libero hic dolores. Unde, eos sequi veritatis deserunt quasi sunt veniam repellat vel repellendus pariatur ratione libero eum.</p>
+                                          <p className={`lg:text-base sm:text-sm text-xs text-[#767676] lg:leading-[30px] md:leading-6 sm:leading-5 leading-4 lg:py-6 md:py-5 sm:py-4 py-3 ${show?" inline-block":"hidden"}`}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur illum suscipit culpa similique amet, non dicta! Laborum eveniet tempore beatae ipsa? Architecto quasi vitae eveniet magnam sapiente id est eum? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam eveniet enim temporibus libero hic dolores. Unde, eos sequi veritatis deserunt quasi sunt veniam repellat vel repellendus pariatur ratione libero eum.</p>
                                           <div className={`${show?"hidden":"inline-block"}`}>
                                           <p className="lg:text-base sm:text-sm text-xs text-[#767676] lg:pb-[30px] md:py-6 sm:py-4 py-3 border-b border-[#F0F0F0] lg:mb-[23px] md:mb-5 sm:mb-4 mb-3">
                                             1 review for Product
@@ -154,7 +154,9 @@ const ProductDetails = () => {
                                                 </div>
                                                    <textarea className="lg:text-sm sm:text-xs text-[10px] font-DM text-[#767676] outline-none w-full max-h-[230px] border-b border-[#F0F0F0]" type="text" placeholder="Your review here" id="Review"/>
                                               </div>
-                                              <ButtonForCartDropdown text="Post" className="w-[200px] lg:mb-[139px] md:mb-24 sm:mb-20 mb-16"/>
+                                                <div className="flex justify-center items-center md:inline-block">
+                                                <ButtonForCartDropdown text="Post" className="w-[200px] md:h-auto h-10 lg:mb-[139px] md:mb-24 sm:mb-20 mb-16"/>
+                                                </div>
                                               </div>
                                           </div>
                     </div>

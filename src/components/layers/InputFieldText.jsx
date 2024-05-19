@@ -1,8 +1,8 @@
 import React from 'react'
 
-const InputFieldText = ({label,className,type,palceholder,id,classNameinput}) => {
+const InputFieldText = ({label,className,type,palceholder,id,classNameinput,classNameMain}) => {
   return (
-    <div className='flex max-w-[508px] flex-col relative w-full border-b border-[#F0F0F0]'>
+    <div className={`flex max-w-[508px] flex-col relative w-full border-b border-[#F0F0F0] ${classNameMain}`}>
     <label className={
         `font-DM lg:text-base sm:text-sm text-xs text-[#262626] lg:leading-[23px] md::leading-4 sm:leading-3 leading-2 ${className}`
     } htmlFor={id}>{label}</label>

@@ -13,6 +13,10 @@ import Contacts from './components/pages/Contacts';
 import Singup from './components/pages/Singup';
 import Login from './components/pages/Login';
 import ProductDetails from './components/pages/ProductDetails';
+import About from './components/pages/About';
+import Account from './components/pages/Account';
+import Cart from './components/pages/Cart';
+import CheackOut from './components/pages/CheackOut';
 
 const App = () => {
   const router = createBrowserRouter(
@@ -28,6 +32,10 @@ const App = () => {
         <Route path='/sign/up' element={<Singup/>}></Route>
         <Route path='/login' element={<Login/>}></Route>
         <Route path='/products/details' element={<ProductDetails/>}></Route>
+        <Route path='/about' element={<About/>}></Route>
+        <Route path='/my/account' element={<Account/>}></Route>
+        <Route path='/cart' element={<Cart/>}></Route>
+        <Route path='/checkout' element={<CheackOut/>}></Route>
       </Route>
     )
   );
