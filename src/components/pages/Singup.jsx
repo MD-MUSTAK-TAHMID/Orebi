@@ -7,6 +7,7 @@ import ButtonForCartDropdown from '../layers/ButtonForCartDropdown'
 import InputFieldText from '../layers/InputFieldText'
 import InputFieldDropDown from '../layers/InputFieldDropDown'
 import InputFieldPassword from '../layers/InputFieldPassword'
+import { Link } from 'react-router-dom'
 
 const Singup = () => {
     let [show,setshow] = useState(false)
@@ -76,7 +77,9 @@ const Singup = () => {
                 <input name='cheack' id='no' type="checkbox" />
                 <label className='lg:text-sm sm:text-xs text-[10px] font-normal font-DM text-[#767676]' htmlFor="no">No</label>
             </div>
+                <Link to="/login">
                 <ButtonForCartDropdown text="Sign Up" className="w-[200px] py-3 lg:mb-[140px] md:mb-32 sm:mb-24 mb-20"/>
+                </Link>
             </div>
         </Container>
     </>

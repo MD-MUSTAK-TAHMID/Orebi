@@ -19,11 +19,11 @@ const Footer = () => {
                 <div className="flex lg:gap-[141px] justify-between items-start">
                     <ul className='flex flex-col lg:gap-[6px] md:gap-1 sm:gap-0.5 gap-0'>
                         <label className='font-DM text-[#262626] lg:text-[16px] md:text-sm sm:text-xs text-[10px] font-bold mb-[11px] lg:leading-[23px] sm:leading-3 leading-[8px]'>MENU</label>
-                        <ListForFooter text="Home"/>
-                        <ListForFooter text="Shop"/>
-                        <ListForFooter text="About"/>
-                        <ListForFooter text="Contact"/>
-                        <ListForFooter text="Journal"/>
+                        <ListForFooter to="/" text="Home"/>
+                        <ListForFooter to="/products" text="Shop"/>
+                        <ListForFooter to="/about" text="About"/>
+                        <ListForFooter to="/contacts" text="Contact"/>
+                        <ListForFooter to="/products/details" text="Journal"/>
                     </ul>
                     <ul className='flex flex-col lg:gap-[6px] md:gap-1 sm:gap-0.5 gap-0 w-auto'>
                         <label className='font-DM text-[#262626] lg:text-[16px] md:text-sm sm:text-xs text-[10px] font-bold mb-[11px] lg:leading-[23px] sm:leading-3 leading-[8px]'>SHOP</label>

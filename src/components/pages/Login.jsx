@@ -7,6 +7,7 @@ import ButtonForCartDropdown from '../layers/ButtonForCartDropdown'
 import InputFieldText from '../layers/InputFieldText'
 import InputFieldDropDown from '../layers/InputFieldDropDown'
 import InputFieldPassword from '../layers/InputFieldPassword'
+import { Link } from 'react-router-dom'
 
 const Login = () => {
   return (
@@ -28,7 +29,9 @@ const Login = () => {
                     <InputFieldPassword classNameforplaceholder="placeholder:font-bold placeholder:text-[30px] placeholder:text-[#767676]" label="Repeat Password" id="Repeat Password" placeholder=". . . . . . ."/>
                     </div>
                 </div>
-                    <ButtonForCartDropdown text="Log in" className="w-[200px] py-3 lg:mb-[140px] md:mb-25 sm:mb-20 mb-15"/>
+                    <Link to="/">
+                        <ButtonForCartDropdown text="Log in" className="w-[200px] py-3 lg:mb-[140px] md:mb-25 sm:mb-20 mb-15"/>
+                    </Link>
             </div>
             </div>
             <div className="px-3 lg:px-0">
@@ -36,8 +39,9 @@ const Login = () => {
                  <p className='max-w-[644px] lg:pb-[51px] md:pb-10 sm:pb-7 pb-5 font-DM lg:text-base sm:text-sm text-xs text-[#767676] lg:leading-[30px] md:leading-5 sm:leading-4 leading-4 '>
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the.
                 </p>
+                <Link to="/sign/up">
                 <ButtonForCartDropdown text="Continue" className="w-[200px] py-3 lg:mb-[140px] md:mb-32 sm:mb-24 mb-20"/>
-
+                </Link>
             </div>
         </Container>
     </>

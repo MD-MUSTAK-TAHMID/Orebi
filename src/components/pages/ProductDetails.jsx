@@ -13,6 +13,7 @@ import ButtonForCartDropdown from '../layers/ButtonForCartDropdown'
 import ContuctDropdown from "../layers/ContuctDropdown" 
 import ProductDatials from '../layers/ProductDatials'
 import InputFieldText from '../layers/InputFieldText'
+import CountDown from '../layers/CountDown'
 
 const ProductDetails = () => {
   let [show,setshow] = useState(true)
@@ -95,11 +96,7 @@ const ProductDetails = () => {
          <div className="flex lg:gap-[53px] md:gap-[30px] sm:gap-[25px] gap-[15px] items-center pt-[29px]">
           <label htmlFor="" className='lg:text-base sm:text-sm text-xs text-[#262626] font-bold'>SIZE:</label>
           <div className="flex lg:gap-[15px] sm:gap-[10px] gap-[7px] items-center ">
-             <div className='py-3 px-8 bg-transparent border border-[#F0F0F0] lg:max-w-[139px] md:max-w-28 sm:max-w-24 max-w-20 lg:text-base sm:text-sm text-xs text-[#767676] flex items-center lg:gap-[35px] md:gap-[30px] sm:gap-[25px] gap-5 justify-center '>
-                <p className='cursor-pointer ' onClick={()=>{settext(text-1)}}>-</p>
-                <h1>{text}</h1>
-                <p className='cursor-pointer ' onClick={()=>{settext(text + 1)}}>+</p>
-             </div>
+            <CountDown/>
           </div>
          </div>
                 </div>

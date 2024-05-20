@@ -6,6 +6,7 @@ import InputFieldText from '../layers/InputFieldText'
 import InputFieldDropDown from '../layers/InputFieldDropDown'
 import ButtonForCartDropdown from '../layers/ButtonForCartDropdown'
 import { Link } from 'react-router-dom'
+import Box from '../layers/Box'
 
 const CheackOut = () => {
   return (
@@ -42,22 +43,10 @@ const CheackOut = () => {
                     </div>
                     <HeadingForPages className="lg:pb-12 md:pb-9 sm:pb-7 pb-5"  text="Billing Details"/>
                     <div className="lg:mb-[60px] md:mb-12 sm:mb-9 mb-7">
-                      <div className="flex">
-                         <h5 className='font-bold lg:text-base sm:text-sm text-xs text-[#262626] lg:leading-[23px] md:pt-4 sm:pt-3 pt-2 md:pb-4 sm:pb-3 pb-2 border border-[#F0F0F0] border-r-0 md:w-[320px] w-full md:px-5 sm:px-3 px-2'>Product</h5>
-                         <p className='lg:text-base sm:text-sm text-xs text-[#767676] lg:leading-[23px] md:pt-4 sm:pt-3 pt-2 md:pb-4 sm:pb-3 pb-2 border border-[#F0F0F0] md:w-[320px] w-full md:px-5 sm:px-3 px-2'>Total</p>
-                      </div>
-                      <div className="flex">
-                         <h5 className='font-bold lg:text-base sm:text-sm text-xs text-[#262626] lg:leading-[23px] md:pt-4 sm:pt-3 pt-2 md:pb-4 sm:pb-3 pb-2 border border-[#F0F0F0] border-r-0 md:w-[320px] w-full md:px-5 sm:px-3 px-2'>Product name x 1</h5>
-                         <p className='lg:text-base sm:text-sm text-xs text-[#767676] lg:leading-[23px] md:pt-4 sm:pt-3 pt-2 md:pb-4 sm:pb-3 pb-2 border border-[#F0F0F0] md:w-[320px] w-full md:px-5 sm:px-3 px-2'>389.99 $</p>
-                      </div>
-                      <div className="flex">
-                         <h5 className='font-bold lg:text-base sm:text-sm text-xs text-[#262626] lg:leading-[23px] md:pt-4 sm:pt-3 pt-2 md:pb-4 sm:pb-3 pb-2 border border-[#F0F0F0] border-r-0 md:w-[320px] w-full md:px-5 sm:px-3 px-2'>Subtotal</h5>
-                         <p className='lg:text-base sm:text-sm text-xs text-[#262626] lg:leading-[23px] md:pt-4 sm:pt-3 pt-2 md:pb-4 sm:pb-3 pb-2 border border-[#F0F0F0] md:w-[320px] w-full md:px-5 sm:px-3 px-2'>389.99 $</p>
-                      </div>
-                      <div className="flex">
-                         <h5 className='font-bold lg:text-base sm:text-sm text-xs text-[#262626] lg:leading-[23px] md:pt-4 sm:pt-3 pt-2 md:pb-4 sm:pb-3 pb-2 border border-[#F0F0F0] border-r-0 md:w-[320px] w-full md:px-5 sm:px-3 px-2'>Total</h5>
-                         <p className='lg:text-base sm:text-sm text-xs text-[#262626] lg:leading-[23px] md:pt-4 sm:pt-3 pt-2 md:pb-4 sm:pb-3 pb-2 border border-[#F0F0F0] md:w-[320px] w-full md:px-5 sm:px-3 px-2'>389.99 $</p>
-                      </div>
+                      <Box lefttext="Product" righttext="Total"/>
+                      <Box lefttext="Product name x 1" righttext="389.99 $"/>
+                      <Box lefttext="Subtotal" righttext="389.99 $" className="!text-[#262626]"/>
+                      <Box lefttext="Total" righttext="389.99 $" className="!text-[#262626]"/>
                     </div>
                     <Link to="/">
                         <ButtonForCartDropdown text="Proceed to Bank" className="w-[200px] lg:mb-[140px] md:mb-[100px] sm:mb-14 mb-10 py-3" />

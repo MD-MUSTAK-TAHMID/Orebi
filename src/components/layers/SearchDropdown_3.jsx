@@ -1,6 +1,7 @@
 import React from 'react'
 import ButtonForCartDropdown from './ButtonForCartDropdown';
 import CartDropdownProduct from './CartDropdownProduct';
+import { Link } from 'react-router-dom';
 
 
 const SearchDropdown_3 = () => {
@@ -14,8 +15,12 @@ const SearchDropdown_3 = () => {
                     <h4 className='lg:text-[16px] md:[14px] sm:text-xs text-[10px] font-DM font-bold'>$44.00</h4>
                 </div>
                 <div className="button flex justify-between gap-[21px] items-center">
-                    <ButtonForCartDropdown text="View Cart"/>
+                    <Link to="/cart">
+                        <ButtonForCartDropdown text="View Cart"/>
+                    </Link>
+                    <Link to="/checkout">
                     <ButtonForCartDropdown text="Checkout"/>
+                    </Link>
                 </div>
             </div>
         </div>

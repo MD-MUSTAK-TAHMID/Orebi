@@ -33,10 +33,10 @@ const Navber = () => {
                      <ul className='flex  lg:gap-x-10 gap-x-16 gap-y-5 items-center justify-center lg:flex-row flex-wrap ps'>
                          <List href="/" text="Home"/>
                          <List href="/products" text="Shop"/>
-                         <List href="/error" text="About"/>
+                         <List href="/about" text="About"/>
                          <List href="/contacts" text="Contacts"/>
-                         <List href="/sign/up" text="Journal"/>
                          <List href="/products/details" text="Journal"/>
+                         <List href="/login" text="Log In"/>
                      </ul>
                  </div>
         </Container>
