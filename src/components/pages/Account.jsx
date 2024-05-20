@@ -32,8 +32,8 @@ const Account = () => {
                     </ul>
                 </div>
                 <div className="max-w-[918px]">
-                    <p className='lg:text-base sm:text-sm text-xs text-[#767676] lg:leading-[30px] md:leading-6 sm:leading-5 leading-4 lg:pb-[45px] md:pb-9 sm:pb-7 pb-5'>Hello <span className='text-[#262626]'>admin</span>? <span className='text-[#262626] cursor-pointer'><Link>Log out</Link></span>)</p>
-                    <p className='lg:text-base sm:text-sm text-xs text-[#767676] lg:leading-[30px] md:leading-6 sm:leading-5 leading-4 lg:pb-[45px] md:pb-9 sm:pb-7 pb-5'>From your account dashboard you can view your <span className='text-[#262626]  cursor-pointer'><Link>recent orders</Link></span>, manage your <span className='text-[#262626] cursor-pointer'><Link>shipping and billing addresses</Link></span>, and <span className='text-[#262626] cursor-pointer'><Link>edit your password and account details</Link></span>.</p>
+                    <p className='lg:text-base sm:text-sm text-xs text-[#767676] lg:leading-[30px] md:leading-6 sm:leading-5 leading-4 lg:pb-[45px] md:pb-9 sm:pb-7 pb-5'>Hello <span className='text-[#262626]'>admin</span>? <span className='text-[#262626] cursor-pointer'><Link to="/">Log out</Link></span>)</p>
+                    <p className='lg:text-base sm:text-sm text-xs text-[#767676] lg:leading-[30px] md:leading-6 sm:leading-5 leading-4 lg:pb-[45px] md:pb-9 sm:pb-7 pb-5'>From your account dashboard you can view your <span className='text-[#262626]  cursor-pointer'><Link to="/error">recent orders</Link></span>, manage your <span className='text-[#262626] cursor-pointer'><Link>shipping and billing addresses</Link></span>, and <span className='text-[#262626] cursor-pointer'><Link>edit your password and account details</Link></span>.</p>
                 </div>
             </div>
         </Container>
