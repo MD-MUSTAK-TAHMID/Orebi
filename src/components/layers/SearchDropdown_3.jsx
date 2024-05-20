@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 const SearchDropdown_3 = () => {
   return (
     <>
-        <div className="border border-[#F0F0F0] absolute top-full translate-y-[15.59px] right-0 z-[5]">
+        <div className="border border-[#F0F0F0] absolute top-full translate-y-[15.59px] right-[-55px] z-[5]">
             <CartDropdownProduct/>
             <div className="px-[21px] pt-[14px] pb-5 bg-white">
                 <div className="flex pb-[13px] gap-1">

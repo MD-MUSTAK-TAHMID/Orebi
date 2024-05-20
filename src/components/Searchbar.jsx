@@ -51,20 +51,20 @@ const Searchbar = () => {
                   <picture className=''>
                     <img src={bar} alt="" />
                   </picture>
-                  <p className='text-[#262626] font-DM md:text-[14px] text-xs font-normal'>Shop by Category</p>
+                  <p className='order- text-[#262626] font-DM md:text-[14px] text-xs font-normal'>Shop by Category</p>
                   <div className="">
                     {cat && (
                       <SearchDropdown_1/>
                     )}
                   </div>
                 </div>
-                <div className=" searchbar">
+                <div className="order-3 md:order-1 searchbar">
                   <form className='relative lg:w-[601px] w-full '>
                     <input type="text" placeholder='Search Products' className='lg:py-4 py-2 lg:ps-[21px] ps-4 lg:w-full pr-10 lg:pr-12 block outline-none appearance-none'/>
                     <FaSearch className='w-[15.97px] absolute top-[50%] translate-y-[-50%] lg:right-[21.03px] right-4'/>
                   </form>
                 </div>
-                <div className=" menu flex lg:gap-[41px] gap-4 ms-3">
+                <div className="order-1 menu flex lg:gap-[41px] gap-4 ms-3">
                     <div className="relative">
                      <div ref={catRef2} className="person flex lg:gap-[10.52px] gap-1">
                       <IoPerson />
