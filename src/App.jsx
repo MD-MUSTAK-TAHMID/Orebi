@@ -17,6 +17,7 @@ import About from './components/pages/About';
 import Account from './components/pages/Account';
 import Cart from './components/pages/Cart';
 import CheackOut from './components/pages/CheackOut';
+import { Redux } from './components/pages/Redux';
 
 const App = () => {
   const router = createBrowserRouter(
@@ -37,6 +38,7 @@ const App = () => {
         <Route path='/my/account' element={<Account/>}></Route>
         <Route path='/cart' element={<Cart/>}></Route>
         <Route path='/checkout' element={<CheackOut/>}></Route>
+        <Route path='/Redux' element={<Redux/>}></Route>
       </Route>
     )
   );
