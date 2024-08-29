@@ -58,7 +58,7 @@ const Footer = () => {
                     <div>
                         <Images className="hidden md:block" src={logo}/>
                     </div>
-                    <ListForFooter text="2024 Orebi Minimal eCommerce Figma Template by Adveits"/>
+                    <ListForFooter text="2024 Orebi Minimal eCommerce site by MD. Mustak Tahmid"/>
                 </ul>
 
             </div>
