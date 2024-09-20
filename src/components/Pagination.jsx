@@ -5,25 +5,31 @@ import ReactPaginate from 'react-paginate';
 import ProductItem from './layers/ProductItem';
 import pro10 from '../assets/pro_10.png'
 
-const items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14,1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14,1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14,1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14,1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14,1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14,1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14,1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
+const items = [
+  1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14,1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14,1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14,1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14,1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14,1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14,1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14,1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14
+];
 
-function Items({ currentItems }) {
-  return (
-    <>
-      {currentItems &&
-        currentItems.map((item) => (
-          <div className='flex w-full justify-center md:w-auto md:block'>
-          <ProductItem text="Basic Crew Neck Tee" price="$44.00" color="Black" overly_1="Add to Wish List" overly_2='Compare' overly_3="Add to Cart" src={pro10} />
-          </div>
-        ))}
-    </>
-  );
-}
+
 const Pagination = ({itemsPerPage }) => {
   // Here we use item offsets; we could also use page offsets
   // following the API or data you're working with.
   const [itemOffset, setItemOffset] = useState(0);
+  let  [items,setItem] = useState([])
 
+  useEffect(()=>{
+    const getData = async ()=>{
+      try{
+        const response = await fetch("https://dummyjson.com/products")
+        const data = await response.json()
+        setItem(data.products);
+        
+      }catch{
+        console.error("Error");
+        
+      }
+    }
+    getData()
+  },[])
   // Simulate fetching items from another resources.
   // (This could be items from props; or items loaded in a local state
   // from an API endpoint with useEffect and useState)
@@ -40,7 +46,19 @@ const Pagination = ({itemsPerPage }) => {
     );
     setItemOffset(newOffset);
   };
-
+  let Items =({ currentItems })=> {
+    return (
+      <>
+        {currentItems &&
+          currentItems.map((item) => (
+            <div className='flex w-full justify-center md:w-auto md:block'>
+            <ProductItem text={item.title} price={item.price} color={item.brand} offer={`${item.discountPercentage}%`} overly_1="Add to Wish List" overly_2='Compare' overly_3="Add to Cart" src={item.thumbnail} />
+            </div>
+          ))}
+      </>
+    );
+  }
+ 
   return (
     <>
       <div className='flex flex-wrap gap-x-10 gap-y-[50px]'>

@@ -21,7 +21,7 @@ const ProductItem = ({offer, overly_1, overly_2, overly_3, text, price, color, s
         </div>
         <div className="pt-6 pb-[15px]">
             <h2 className='flex justify-between text-[#262626] font-DM font-bold md:text-[20px] sm:text-lg text-base '>
-                {text}<p className='text-[#767676] font-DM font-normal md:text-[16px] sm:text-sm text-xs'>{price}</p>
+                {text}<p className='text-[#767676] font-DM font-normal md:text-[16px] sm:text-sm text-xs'>${price}</p>
             </h2>
             <p className='text-[#767676] font-DM font-normal md:text-[16px] sm:text-sm text-xs md:leading-[30px] sm:leading-5 leading-4'>{color}</p>
             
